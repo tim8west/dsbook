@@ -144,7 +144,7 @@ data(Galton)
 x <- Galton$child
 ```
 
-1\. Compute the average and median of these data.
+1\. Compute the average and standard deviation of these data.
 
 2\. Compute the median and median absolute deviation of these data.
 
