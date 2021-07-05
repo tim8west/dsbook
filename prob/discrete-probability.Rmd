@@ -364,8 +364,8 @@ mean((hands[,1] %in% aces & hands[,2] %in% facecard) |
 Instead of using `combinations` to deduce the exact probability of a Natural 21, we can use a Monte Carlo to estimate this probability. In this case, we draw two cards over and over and keep track of how many 21s we get. We can use the function sample to draw two cards without replacements:
 
 ```{r}
-hand <- sample(deck, 2)
-hand
+hands <- sample(deck, 2)
+hands
 ```
 
 And then check if one card is an Ace and the other a face card or a 10. Going forward, we include 10 when we say _face card_. Now we need to check both possibilities:
